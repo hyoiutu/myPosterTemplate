@@ -1,0 +1,38 @@
+\documentclass[final,dvipdfmx]{beamer}
+\mode<presentation> {
+  \usetheme{Berlin}
+}
+\usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}
+\usepackage[japanese]{babel}
+\usepackage{caption}
+
+\usefonttheme{professionalfonts}
+\usefonttheme[onlymath]{serif}
+% フォントファミリー設定
+% 英文をサンセリフ体に
+\renewcommand{\familydefault}{\sfdefault}
+% 日本語をゴシック体に
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+
+\captionsetup[figure]{name=図}
+\captionsetup[table]{name=表}
+\setbeamertemplate{caption}[numbered] % 図や表のキャプションに図1，図2，図3．．．などをつける
+
+\graphicspath{{img/}}
+
+\setbeamertemplate{navigation symbols}{}   % ナビゲーションバーを表示しません
+
+\setbeamerfont{caption}{size=\normalsize}
+\setbeamerfont{block title}{size=\LARGE}
+\setbeamerfont*{itemize/enumerate body}{size=\large}
+\setbeamerfont*{itemize/enumerate subbody}{parent=itemize/enumerate body, size=\large}
+\setbeamerfont*{itemize/enumerate subsubbody}{parent=itemize/enumerate subbody, size=\large}
+
+%\setbeamercolor{palette secondary}{bg=white}
+%\setbeamercolor{palette tertiary}{bg=white}
+\setbeamercolor{frametitle}{fg=black,bg=white}
+\setbeamercolor{block body}{bg=white}
+
+\begin{document}
+\input{myPoster}
+\end{document}

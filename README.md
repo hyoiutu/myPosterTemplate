@@ -1,0 +1,2 @@
+# myPosterTemplate
+ほぼ自分用のLaTeXポスターテンプレート
